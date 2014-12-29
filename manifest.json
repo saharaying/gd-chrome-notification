@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "金数据新数据提醒",
+    "description": "当您的表单有新数据提交时，通过chrome提醒您。",
+    "version": "1.0",
+
+    "icons": {
+        "128": "images/icon38.png"
+    },
+
+    "permissions": [
+        "http://localhost:3000/",
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        }
+    },
+
+    "background": {
+        "scripts": ["backgroundPage.js"]
+    },
+
+    "options_page": "options.html"
+}
