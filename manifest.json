@@ -10,8 +10,11 @@
     },
 
     "permissions": [
+        "https://jinshuju.net/",
+        "https://www.jinshuju.net/",
         "http://localhost:3000/",
-        "storage"
+        "storage",
+        "notifications"
     ],
     "browser_action": {
         "default_icon": {
@@ -23,6 +26,7 @@
     "background": {
         "scripts": ["backgroundPage.js"]
     },
-
-    "options_page": "options.html"
+    "web_accessible_resources": [
+        "images/new_entry.png"
+    ]
 }
