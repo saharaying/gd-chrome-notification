@@ -53,7 +53,6 @@
             }
         };
         xhr.send();
-
         timeoutHandle = setTimeout(requestGDNewEntry, frequency);
     }
 
@@ -67,9 +66,6 @@
 
     function start () {
         currentTimestamp = Math.round((new Date().getTime()) / 1000) - (12 * 3600);
-        chrome.notifications.onClicked.addListener(function(notificationId) {
-            window.open(notificationId);
-        });
         requestGDNewEntry();
     }
 
@@ -92,6 +88,9 @@
         }
     });
 
+    chrome.notifications.onClicked.addListener(function(notificationId) {
+        window.open(notificationId);
+    });
 
 }());
 
