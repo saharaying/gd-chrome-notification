@@ -4,7 +4,7 @@
 
 
     var active = false;
-    var frequency = 10 * 1000;
+    var frequency = 60 * 1000;
     var timeoutHandle;
     var currentTimestamp;
 
