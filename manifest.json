@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
 
-    "name": "金数据新数据提醒",
-    "description": "当您的表单有新数据提交时，通过chrome提醒您。",
+    "name": "金数据提醒",
+    "description": "自动获取金数据系统提醒，包括新数据、表单分享、模板审核等。点击以开启/关闭。",
     "version": "1.0",
 
     "icons": {
@@ -27,6 +27,7 @@
         "scripts": ["backgroundPage.js"]
     },
     "web_accessible_resources": [
-        "images/new_entry.png"
+        "images/new_entry.png",
+        "images/message.png"
     ]
 }
